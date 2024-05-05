@@ -1,0 +1,11 @@
+---
+exclude_paths:
+  - .cache/
+  - .config/
+  - .git/
+  - .github/
+  - .gitlab/
+  - .vscode/
+  - .venv/
+  - .env/
+  - .tox/
