@@ -4,3 +4,8 @@
     - (auth_token is not defined)
   fail:
     msg: auth_token is mandatory
+
+- name: Copy results to output file
+  copy:
+    content: "{{ result_attr | to_nice_json }}"
+    dest: "{{ template }}.json"
