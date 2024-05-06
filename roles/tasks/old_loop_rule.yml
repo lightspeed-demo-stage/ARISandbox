@@ -1,4 +1,4 @@
-# Rule W001
+# Rule W011
 ---
 - name: with_items
   ansible.builtin.debug:
