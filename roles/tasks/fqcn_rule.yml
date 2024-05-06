@@ -7,5 +7,5 @@
     name: my_ec2
     region: us-east-1
     aws_access_key: "123"
-    aws_secret_key: "abc"
+    aws_secret_key: abc
     
