@@ -1,5 +1,8 @@
 # Rule W004
 ---
-- name: A task with unnecessary loop variable
-  ansible.builtin.debug:
-    msg: "{{ item.msg }}"
+- name: Example playbook
+  hosts: all
+  tasks:
+    - name: A task with unnecessary loop variable
+      ansible.builtin.debug:
+        msg: "{{ msg }}" # `item` is not necessary
