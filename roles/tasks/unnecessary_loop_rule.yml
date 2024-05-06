@@ -3,3 +3,5 @@
 - name: A task with unnecessary loop variable
   ansible.builtin.debug:
     msg: "{{ item }}"
+  loop:
+    - 'hello'
