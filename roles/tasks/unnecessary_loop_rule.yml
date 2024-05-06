@@ -4,4 +4,4 @@
   ansible.builtin.debug:
     msg: "{{ item }}"
   loop:
-    - 'hello'
+    - hello
