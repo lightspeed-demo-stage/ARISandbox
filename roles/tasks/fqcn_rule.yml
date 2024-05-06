@@ -1,6 +1,5 @@
 # Rule W001
 ---
-
 - name: Create a ec2 cloud instance
   register: x
   ec2_instance:
@@ -9,4 +8,3 @@
     region: us-east-1
     aws_access_key: "123"
     aws_secret_key: abc
-    
