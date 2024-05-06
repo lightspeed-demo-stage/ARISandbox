@@ -1,7 +1,6 @@
 # Rule W011
 ---
-- name: with_items
+- name: With_items
   ansible.builtin.debug:
     msg: "{{ item }}"
   loop: "{{ items |flatten(levels=1) }}"
-  
