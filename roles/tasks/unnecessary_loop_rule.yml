@@ -1,5 +1,6 @@
+# Rule W004
 ---
 
-- name: A task with unnecessary loop variable # Rule W004
+- name: A task with unnecessary loop variable
   ansible.builtin.debug:
     msg: "{{ msg }}"
