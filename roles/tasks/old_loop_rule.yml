@@ -1,6 +1,11 @@
 # Rule W011
 ---
-- name: With_items
-  ansible.builtin.debug:
-    msg: "{{ item }}"
-  loop: "{{ items |flatten(levels=1) }}"
+- name: Example playbook
+  hosts: all
+
+  tasks:
+  - name: A task with old loop style
+    ansible.builtin.debug:
+  	 msg: "{{ item }}"
+	 with_items: "{{ items }}"
+  
