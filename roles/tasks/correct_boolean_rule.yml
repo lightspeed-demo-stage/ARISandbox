@@ -5,6 +5,6 @@
 
   tasks:
     - name: Install python
-      ansible.builtin.package:
+      ansible.builtin.yum:
         name: "{{ name }}"
-        skip_broken: "YES"
+        allow_downgrade: "YES"
