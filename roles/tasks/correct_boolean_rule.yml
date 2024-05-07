@@ -1,0 +1,10 @@
+---
+- name: Example playbook
+  hosts: all
+
+  tasks:
+  - name: Install python
+    ansible.builtin.package:
+    	name: "{{ name }}"
+    	skip_broken: "YES"
+     
