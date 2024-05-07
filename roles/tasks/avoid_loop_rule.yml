@@ -1,0 +1,14 @@
+# Rule W013
+---
+- name: Example playbook
+  hosts: all
+
+  tasks:
+    - name: Install python and go
+      ansible.builtin.yum:
+        name: "{{ item }}"
+        state: present
+        with_items:
+        - python
+        - go
+        
