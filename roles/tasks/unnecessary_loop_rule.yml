@@ -3,6 +3,6 @@
 - name: Example playbook
   hosts: all
   tasks:
-  - name: A task with unnecessary loop variable
-    ansible.builtin.debug:
-      msg: "{{ item.msg }}"
+    - name: A task with unnecessary loop variable
+      ansible.builtin.debug:
+        msg: "{{ msg }}"
