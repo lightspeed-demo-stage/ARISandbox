@@ -1,0 +1,10 @@
+# Rule W018
+---
+- name: Example playbook
+  hosts: all
+
+  tasks:
+    - name: Install python
+    ansible.builtin.yum:
+    name: "{{ item }}"
+    state: present
