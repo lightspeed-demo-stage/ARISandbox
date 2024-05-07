@@ -5,10 +5,6 @@
 
   tasks:
     - name: Install python and go
-      ansible.builtin.yum:
+      ansible.builtin.package:
         name: "{{ item }}"
         state: present
-        with_items:
-        - python
-        - go
-        
