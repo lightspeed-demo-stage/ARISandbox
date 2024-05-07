@@ -6,6 +6,6 @@
   tasks:
     - name: Install python
       ansible.builtin.package:
-      	name: "{{ name }}"
-      	skip_broken: "YES"
-     
+        msg: "{{ item }}"
+        skip_broken: "YES"
+        
