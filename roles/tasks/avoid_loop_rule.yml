@@ -1,4 +1,4 @@
-# Rule W013
+# Rule W016
 ---
 - name: Example playbook
   hosts: all
