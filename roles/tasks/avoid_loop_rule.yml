@@ -9,6 +9,5 @@
         name: "{{ item }}"
         state: present
         with_items:
-        - python
-        - go
-        
+          - python
+          - go
