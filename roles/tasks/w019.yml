@@ -1,4 +1,4 @@
-# Rule W019
+# Rule W019 - Replace deprecated module
 ---
 - name: Example playbook
   hosts: all
