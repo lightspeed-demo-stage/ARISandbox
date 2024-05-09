@@ -1,4 +1,4 @@
-# Rule W013
+# Rule W013 - Correct boolean expression
 ---
 - name: Example playbook
   hosts: all
