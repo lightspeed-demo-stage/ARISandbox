@@ -13,7 +13,7 @@
       ansible.builtin.apt:
         name: "{{ user_packages }}"
         state: present
-        
+
     - name: Install Apache
       ansible.builtin.dnf:
         name: "{{ user_packages }}"
