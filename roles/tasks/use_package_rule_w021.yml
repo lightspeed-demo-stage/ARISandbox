@@ -5,16 +5,16 @@
 
   tasks:
     - name: Install python
-      ansible.builtin.yum:
+      ansible.builtin.package:
         name: "{{ user_packages }}"
         state: present
 
     - name: Install go
-      ansible.builtin.apt:
+      ansible.builtin.package:
         name: "{{ user_packages }}"
         state: present
-        
+
     - name: Install Apache
-      ansible.builtin.dnf:
+      ansible.builtin.package:
         name: "{{ user_packages }}"
         state: present
