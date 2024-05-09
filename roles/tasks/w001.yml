@@ -1,4 +1,4 @@
-# Rule W001
+# Rule W001 - Use full FQCN
 ---
 - name: Create a ec2 cloud instance
   register: x
