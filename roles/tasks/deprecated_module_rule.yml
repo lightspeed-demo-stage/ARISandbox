@@ -1,9 +1,0 @@
-# Rule W019
----
-- name: Example playbook
-  hosts: all
-
-  tasks:
-    - name: Configure VLAN ID
-      ansible.netcommon.net_vlan:
-        vlan_id: 20
