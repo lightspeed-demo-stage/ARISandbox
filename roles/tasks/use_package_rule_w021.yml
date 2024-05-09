@@ -1,0 +1,23 @@
+# Rule W021
+---
+- name: Example playbook
+  hosts: all
+
+  tasks:
+    - name: Install python
+      ansible.builtin.yum:
+        name: "{{ user_packages }}"
+        become: true
+        state: present
+
+    - name: Install go
+      ansible.builtin.apt:
+        name: "{{ user_packages }}"
+        become: true
+        state: present
+        
+    - name: Install Apache
+      ansible.builtin.dnf:
+        name: "{{ user_packages }}"
+        become: true
+        state: present
