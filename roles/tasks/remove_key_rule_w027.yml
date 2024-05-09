@@ -6,8 +6,7 @@
     size: 1400
 
   tasks:
-  - name: Test reachability to 198.51.100.249 using size
-    cisco.ios.ios_ping:
-      dest: 198.51.100.249
-      size: 1400
-      
+    - name: Test reachability to 198.51.100.249 using size
+      cisco.ios.ios_ping:
+        dest: 198.51.100.249
+        size: 1400
