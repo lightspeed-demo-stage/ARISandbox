@@ -1,4 +1,4 @@
-# Rule W021
+# Rule W021 - Replace apt, dnf, and yum with package module
 ---
 - name: Example playbook
   hosts: all
