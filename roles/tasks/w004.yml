@@ -1,4 +1,4 @@
-# Rule W004
+# Rule W004 - Remove unnecessary loop vars
 ---
 - name: Example playbook
   hosts: all
