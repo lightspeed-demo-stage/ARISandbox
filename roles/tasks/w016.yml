@@ -1,4 +1,4 @@
-# Rule W016
+# Rule W016 - Avoid loop style
 ---
 - name: Example playbook
   hosts: all
