@@ -1,4 +1,4 @@
-# Rule W027
+# Rule W027 - Remove key in module defaults
 ---
 - name: Example playbook
   hosts: all
