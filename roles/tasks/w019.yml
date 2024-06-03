@@ -1,9 +1,0 @@
-# Rule W019 - Replace deprecated module
----
-- name: Example playbook
-  hosts: all
-
-  tasks:
-    - name: Enable LLDP service
-      cisco.ios.ios_lldp:
-        state: present
