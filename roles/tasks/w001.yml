@@ -15,4 +15,4 @@
         aws_secret_key: abc
     - name: Check for deprecated module
       ec2_asg:
-        name: "test"
+        name: test
