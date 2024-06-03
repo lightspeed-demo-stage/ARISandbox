@@ -6,11 +6,9 @@
     ansible.builtin.file:
       owner: root
       group: root
-      mode: 0755
+      mode: "0755"
   tasks:
     - name: Create file1
       ansible.builtin.file:
         state: touch
         path: /tmp/file1
-        group: root
-        mode: 0755
