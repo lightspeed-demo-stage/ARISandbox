@@ -13,4 +13,4 @@
         state: touch
         path: /tmp/file1
         group: root
-        mode: 0755
+        mode: "0755"
