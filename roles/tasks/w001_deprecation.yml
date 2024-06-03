@@ -1,0 +1,10 @@
+# Rule W001 - Replace deprecated module
+---
+- name: Example playbook
+  gather_facts: false
+  hosts: all
+  become: false
+  tasks:
+    - name: check for deprecated module
+      ec2_asg:
+        name: "test"

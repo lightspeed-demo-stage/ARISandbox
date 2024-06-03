@@ -1,12 +1,16 @@
 # Rule W027 - Remove key in module defaults
 ---
 - name: Example playbook
-  hosts: all
+  hosts: localhost
   module_defaults:
-    size: 1400
-
+    ansible.builtin.file:
+      owner: root
+      group: root
+      mode: 0755
   tasks:
-    - name: Test reachability to 198.51.100.249 using size
-      cisco.ios.ios_ping:
-        dest: 198.51.100.249
-        size: 1400
+    - name: Create file1
+      ansible.builtin.file:
+        state: touch
+        path: /tmp/file1
+        group: root
+        mode: 0755
