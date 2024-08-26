@@ -1,12 +1,14 @@
 # Rule W016 - Avoid loop style
 ---
-- name: Example playbook
+- name: Playbook example
+  gather_facts: false
+  become: false
   hosts: all
-
   tasks:
-    - name: Install python and go
+    - name: Install httpd and nginx
       ansible.builtin.yum:
         name: "{{ item }}"
+        state: present
       with_items:
-        - python
-        - go
+        - httpd
+        - nginx
